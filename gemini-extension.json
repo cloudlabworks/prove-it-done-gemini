@@ -1,0 +1,6 @@
+{
+  "name": "prove-it-done-gemini",
+  "version": "0.1.0",
+  "description": "Receipt-gated completion: before the agent says done, each claim gets a re-runnable receipt that a bundled verifier checks against the real system.",
+  "contextFileName": "GEMINI.md"
+}

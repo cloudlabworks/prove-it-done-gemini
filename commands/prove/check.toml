@@ -1,0 +1,8 @@
+description = "Prove the work is done: list claims, write receipts, run the verifier, report only what passed."
+prompt = """
+Activate the `prove-it-done` skill and follow its steps for the work just
+completed in this session. {{args}}
+
+Finish with only what the verifier reports as PROVEN. Name every unproven step
+as not done, and say why.
+"""
