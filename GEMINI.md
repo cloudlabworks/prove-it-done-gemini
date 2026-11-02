@@ -13,3 +13,4 @@ after your last change, and report only what passed.
 
 The verifier needs Python 3.9 or later: `python3 scripts/verify_receipts.py --help`
 (path relative to the skill directory).
+On Windows, use `py -3` or `python` where this says `python3`.

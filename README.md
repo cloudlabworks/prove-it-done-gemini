@@ -16,7 +16,12 @@ skill behaviour issues there; report packaging issues (manifest, command, contex
 gemini extensions install https://github.com/cloudlabworks/prove-it-done-gemini
 ```
 
-Requires Python 3.9 or later for the verifier (standard library only, no packages).
+Requires Python 3.9 or later for the verifier (standard library only, no packages). On
+Windows, use `py -3` or `python` where this says `python3`; for example:
+
+```
+py -3 skills/prove-it-done/scripts/verify_receipts.py --help
+```
 
 ## What's in it
 
