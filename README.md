@@ -51,6 +51,16 @@ Rules the skill enforces:
 - A check that errors (timeout, 401, command not found) proves nothing.
 - "Done" is said only for PROVEN steps.
 
+## Keeping the copy in sync
+
+The bundled skill is checked against the upstream repository with:
+
+```bash
+python3 scripts/check_skill_sync.py ../prove-it-done
+```
+
+It prints one line per difference and exits 1 if the copy has drifted (2 on a usage error).
+
 ## Notes
 
 - No MCP server and no shell hooks: the command is prompt-only, and the verifier is run by the skill.
