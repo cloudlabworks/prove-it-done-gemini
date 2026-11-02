@@ -52,6 +52,9 @@ The bundled skill is checked against the upstream repository with:
 
 ```bash
 python3 scripts/check_skill_sync.py ../prove-it-done
+```
+
+It prints one line per difference and exits 1 if the copy has drifted (2 on a usage error).
 
 ## Notes
 
