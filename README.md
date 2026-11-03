@@ -49,6 +49,9 @@ Rules the skill enforces:
 
 - A tool's "ok" or a worker's "done" is a claim, not evidence.
 - A check that errors (timeout, 401, command not found) proves nothing.
+- A receipt that already passes before the change is not evidence. With `| baseline=HEAD`
+  the verifier re-runs a code receipt against the pre-change tree and marks it VACUOUS if it
+  passes there too; `--require-baseline` makes that a failure.
 - "Done" is said only for PROVEN steps.
 
 ## Keeping the copy in sync
