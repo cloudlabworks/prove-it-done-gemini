@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Claimed target binding, synced from issaquahd/prove-it-done#8 into `skills/prove-it-done/`: a done step can name its object with `- target: NAME`, so a check on `web-canary` no longer proves a claim about `web`, and `needs=sha256` requires a checksum receipt rather than a listing. `sha256=` on a non-`file:` receipt is now a parse error.
 - Verifier baseline check (fail before, pass after), synced from issaquahd/prove-it-done#7 into `skills/prove-it-done/`. A receipt that already passes on the pre-change state is VACUOUS and not counted; `baseline=REF`, `keep=` and `before=` set the pre-change state; `--require-baseline` makes VACUOUS a failure (#7).
 - `CONTRIBUTING.md`: contributions are released under the repository's MIT licence, and commits carry a DCO sign-off (#6).
 - Skill sync checker, `scripts/check_skill_sync.py`, with tests (#5).
